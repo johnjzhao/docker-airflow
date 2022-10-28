@@ -1,4 +1,4 @@
-# VERSION 1.0.1
+# VERSION 2.0.1
 # AUTHOR: John Zhao - SUNVALLEY COMPUTER INC
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t zhaojohn96/docker-airflow .
