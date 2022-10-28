@@ -2,10 +2,10 @@
 # AUTHOR: John Zhao - SUNVALLEY COMPUTER INC
 # DESCRIPTION: Basic Airflow container
 # BUILD: docker build --rm -t zhaojohn96/docker-airflow .
-# SOURCE: https://github.com/zhaojohn96/docker-airflow
+# SOURCE: https://github.com/johnjzhao/docker-airflow
 
 FROM python:3.7-slim-buster
-LABEL maintainer="Puckel_"
+LABEL maintainer="JohnJZ_"
 
 # Never prompt the user for choices on installation/configuration of packages
 ENV DEBIAN_FRONTEND noninteractive
