@@ -1,7 +1,7 @@
 version: '3.7'
 services:
     postgres:
-        image: postgres:9.6
+        image: postgres:13
         environment:
             - POSTGRES_USER=airflow
             - POSTGRES_PASSWORD=airflow
@@ -30,7 +30,7 @@ services:
             - "8080:8080"
         command: webserver
         healthcheck:
-            test: ["CMD-SHELL", "[ -f /usr/local/airflow/airflow-webserver.pid ]"]
+            test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
             interval: 30s
             timeout: 30s
             retries: 3
