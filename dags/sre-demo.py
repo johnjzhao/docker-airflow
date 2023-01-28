@@ -12,7 +12,7 @@ from airflow.operators.bash import BashOperator
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'email': ['john.zhao@evernorth.com'],
+    'email': ['john.zhao@sunvalle.net'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
